@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+body {
+    font-size: 62.5%;
+}
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header_inner {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_inner .logo img {
+    width: 112px;
+}
+
+
+
+
+/* 슬라이드 css */
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+/* 프로그레스바 */
+.pagination_container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+.pagination_container_inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.progressbar {
+    width: 140px !important;
+    bottom: 30px !important;
+    left: 50px !important;
+    top: auto !important;
+}
+
+/* 슬라이드 재생/멈춤 */
+.swiper .pause {
+    position: absolute;
+    left: 240px;
+    bottom: 28px;
+    width: 13px;
+    height: 13px;
+    z-index: 30;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.swiper .pause > span {
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+}
+.swiper .play > span {
+    width: auto;
+    height: auto;
+    border-left: 10px solid #fff;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+.hidden {
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_line .hamburger {
+    position: relative;
+    height: 100%;
+}
+.hamburger #sideBar_open {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -15px;
+    padding: 5px;
+    z-index: 2;
+}
+.hamburger #sideBar_open .icon_menu {
+    position: relative;
+    width: 23px;
+    height: 18px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: 0;
+    display: inline-block;
+}
+.hamburger #sideBar_open .icon_menu::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -1px;
+    border-top: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
